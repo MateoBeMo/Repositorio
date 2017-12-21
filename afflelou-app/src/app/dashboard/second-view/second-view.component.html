@@ -1,0 +1,34 @@
+<h3>Using card component example</h3>
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Card title" [(ngModel)]="title">
+  <span class="input-group-btn">
+    <button class="btn btn-secondary" type="button" (click)="showCard()">Card</button>
+  </span>
+</div>
+<div *ngIf="show">
+  <app-card Title="{{title}}"></app-card>
+</div>
+<br><br><br>
+<h3>Using alert component example</h3>
+<form>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="success" [(ngModel)]="type"  >Success
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="info" [(ngModel)]="type" >Info
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="warning" [(ngModel)]="type" >Warning
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="danger" [(ngModel)]="type" >Danger
+  </label>
+</form>
+<app-alert type ="{{type}}"></app-alert>
+<br><br><br>
+<button class="btn btn-primary getCustomers" id="getCustomers" (click)="getCustomers()" >Get Customers</button>
+<div *ngIf="customers">
+  <pre *ngFor="let elemento of customers">
+    Name: {{ elemento.name }} Surname: {{ elemento.surname }}
+  </pre>
+</div>

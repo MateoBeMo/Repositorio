@@ -1,0 +1,51 @@
+{
+  "language-stadistics": [
+    {
+      "id": 1,
+      "language": "C+",
+      "total": 18
+    },
+    {
+      "id": 2,
+      "language": "Ruby",
+      "total": 15
+    },
+    {
+      "id": 3,
+      "language": "Phyton",
+      "total": 21
+    },
+    {
+      "id": 4,
+      "language": "Java",
+      "total": 23
+    },
+    {
+      "id": 5,
+      "language": "Javascript",
+      "total": 27
+    },
+    {
+      "id": 6,
+      "language": "C#",
+      "total": 29
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Mateo",
+      "surname": "Bernal"
+    },
+    {
+      "id": 2,
+      "name": "Samuel",
+      "surname": "Andreo"
+    },
+    {
+      "id": 3,
+      "name": "Adrian",
+      "surname": "Nieve"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<h3>Pie-chart component</h3>
+<img src="assets/pie-chart.png" alt="Pie chart" height="300" width="400">
+
+<h3>Using alert component example</h3>
+<form>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="success" [(ngModel)]="type">Success
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="info" [(ngModel)]="type">Info
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="warning" [(ngModel)]="type">Warning
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="optradio" value="danger" [(ngModel)]="type">Danger
+  </label>
+</form>
+<app-alert type="{{type}}"></app-alert>

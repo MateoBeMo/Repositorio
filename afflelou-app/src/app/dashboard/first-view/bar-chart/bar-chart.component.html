@@ -1,0 +1,22 @@
+<h3>Bar-chart component</h3>
+<img src="assets/bar-chart.png" alt="Bar chart" height="300" width="400">
+
+<div *ngIf="data">
+  <h4>Data provided by a service</h4>
+  <div *ngFor="let element of data" id="languageDiv">
+    <p>Language: {{ element.language }} total: {{ element.total }}</p>
+  </div>
+  <div class="input-group">
+      <input type="text" class="form-control" placeholder="New language" id="inputLanguage" [(ngModel)]="language">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" id="addLanguage" type="button" (click)="add()">Add</button>
+      </span>
+    </div>
+</div>
+<h4>Application interface: chart-info</h4>
+<div>
+  <p>Labels: {{ chartInfo.labels }}</p>
+  <p>Type: {{ chartInfo.type }}</p>
+  <p>Leyend: {{ chartInfo.leyend }}</p>
+  <p>Title: {{ chartInfo.title }}</p>
+</div>
