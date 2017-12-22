@@ -83,7 +83,7 @@ If you just put the services in the providers property of the shared module’s 
 
 So in this application we use a way to write our shared module in which we use ModuleWithProviders, forRoot(), etc
 
-# AllianzTest
+# Testing
 
 This project use a test environment for e2e and unit testing. Currently has two simple e2e tests and two unit test for services.
 Download dependencies with `npm install`.
