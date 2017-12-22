@@ -1,4 +1,4 @@
-# AllianzSeed
+# AfflelouApp
 **Ahora mismo el proyecto utiliza un template de css para la barra lateral (sb-admin.min.css) y bootstrap (bootstrap.min.css), ambos ficheros se encuentran en la carpeta assets**
 
 
