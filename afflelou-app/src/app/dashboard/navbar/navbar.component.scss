@@ -1,0 +1,13 @@
+@import '../../app.component.scss';
+
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav{
+    background: $primary-color !important;
+}
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
+    color: #fff!important;
+    background-color: $second-color;
+}
+.dropdown-message {
+    width: 170px!important;
+    text-overflow: ellipsis;
+}

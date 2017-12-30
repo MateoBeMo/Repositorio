@@ -6,11 +6,11 @@ import { UserService } from '../../shared/services/user.service';
 
 
 @Component({
-  selector: 'app-login',
+  selector: 'login',
   templateUrl: './login.component.html',
   styles: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class Login implements OnInit {
 
   public form: FormGroup;
   public email: AbstractControl;
@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
           this.userService.login(
             body.access_token
           );*/
-          this.router.navigate(['pages']);
+          this.router.navigate(['dashboard']);
        // }
       });
     }

@@ -14,6 +14,13 @@ import { SharedModule } from '../shared/shared.module';
 import { QuizModule } from './quiz/quiz.module';
 import { LoginModule } from './login/login.module';
 
+import { LoggedInGuard } from './logged-in.guard';
+
+// libraries
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChartsModule } from 'ng2-charts';
+
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,8 +37,10 @@ import { LoginModule } from './login/login.module';
     QuizModule,
     LoginModule,
     SharedModule.forRoot(),
+    NgbModule.forRoot(),
+    ChartsModule,
   ],
-  providers: [],
+  providers: [LoggedInGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -13,9 +13,11 @@ import { AuthService } from './services/auth.service';
 import { EmployeeService } from './services/employee.service';
 import { UserService } from './services/user.service';
 import { UtilsService } from './services/utils.service';
+import { QuizService } from './services/quiz.service';
+import { HelperService } from './services/helper.service';
 
 export const providers = [
-  CustomerService, StadisticsService, AuthService, EmployeeService, UserService, UtilsService
+  CustomerService, StadisticsService, AuthService, EmployeeService, UserService, UtilsService, QuizService, HelperService,
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 import { AppPage } from './app.po';
 
 describe('allianz-seed App', () => {
-  let page: AppPage;
+  const page: AppPage;
 
   // beforeEach(() => {
   //   page = new AppPage();

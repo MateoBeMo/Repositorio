@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UserService } from '../../../shared/services/user.service';
 
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  constructor() { }
+  public isCollapsed = false;
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
   }
-
+  logOut(): void {
+    this.userService.logout();
+  }
 }

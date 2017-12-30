@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { routing } from './dashboard.routing';
 
 import { DashboardComponent } from '../dashboard/dashboard.component';
@@ -12,6 +13,7 @@ import { SharedModule } from '../../shared/shared.module';
     CommonModule,
     FormsModule,
     routing,
+    NgbModule,
     SharedModule
   ],
   declarations: [DashboardComponent, NavbarComponent]

@@ -1,2 +1,17 @@
+// _app-component.scss
 
-  
+$primary-color: indigo;
+$second-color: rgb(169, 112, 223);
+//#63003A;
+//#BC77A2;
+
+.mr-top-custom {
+    margin-top: 15em
+}
+.bg-custom {
+    background: $primary-color;
+}
+ body a,p,label,div {
+    color:white;
+ }
+
