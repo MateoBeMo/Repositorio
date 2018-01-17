@@ -105,11 +105,11 @@ export class FirstViewComponent implements OnInit {
     </div>
     <ul *ngIf="tipo === 'Negativos'" class="modal-body" style="margin-left: 2.5em;">
       <li *ngFor="let resultado of resultadosNegativos">
-       <a [routerLink]="['detalle-valoracion', resultado.id]" > ID: {{resultado.id }} , Número de venta: {{resultado.numeroVenta}} </a>
+       <a [routerLink]="['dashboard/detalle-valoracion', resultado.id]" > ID: {{resultado.id }} , Número de venta: {{resultado.numeroVenta}} </a>
       </li>
       </ul>
     <ul *ngIf="tipo === 'Totalmente Positivos'" class="modal-body">
-      <li *ngFor="let resultado of resultadosPositivos" > <a [routerLink]="['detalle-valoracion', resultado.id]" > Número de venta: {{resultado.numeroVenta}} </a>
+      <li *ngFor="let resultado of resultadosPositivos" > <a [routerLink]="['dashboard/detalle-valoracion', resultado.id]" > Número de venta: {{resultado.numeroVenta}} </a>
       </li>
     </ul>
     <div class="modal-footer">
