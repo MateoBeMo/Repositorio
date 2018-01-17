@@ -1,0 +1,41 @@
+// _app-component.scss
+$primary-color: indigo;
+$second-color: rgb(169, 112, 223);
+//#63003A;
+//#BC77A2;
+.mr-top-custom-22 {
+    margin-top: 22em
+}
+
+.mr-top-custom-10 {
+    margin-top: 10em
+}
+
+.mr-top-custom {
+    margin-top: 15em
+}
+
+.bg-custom {
+    background: $primary-color;
+}
+
+.btn-lg {
+    font-size: 40px;
+}
+
+.select-lg {
+    height: 2em !important;
+    font-size: 30px;
+}
+
+.fs-20 {
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+body a,
+p,
+label,
+div {
+    color: white;
+}

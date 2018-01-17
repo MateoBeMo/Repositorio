@@ -1,0 +1,13 @@
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <app-bar-chart [colors]="pchartColors" [barChartLabels]="barChartLabels" [barChartType]="barChartType" [barChartLegend]="barChartLegend" [barChartData]="barChartData"></app-bar-chart>
+        </div>
+        <div class="col-sm-6">
+            <app-pie-chart [colors]="pchartColors" [pieChartData]="pieChartData" [pieChartLabels]="pieChartLabels" (onClickChart)="onClickChart($event)"></app-pie-chart>
+        </div>
+    </div>
+</div>
+
+<!-- <button class="btn btn-lg btn-outline-primary" (click)="open()">Launch demo modal</button> -->
