@@ -1,8 +1,8 @@
 <!-- Page Content -->
-<div class="container">
+<div class="container mr-top-custom">
     <div class="row">
-        <div class="col-sm-6">
-            <app-bar-chart [colors]="pchartColors" [barChartLabels]="barChartLabels" [barChartType]="barChartType" [barChartLegend]="barChartLegend" [barChartData]="barChartData"></app-bar-chart>
+        <div class="col-sm-6" *ngIf="barChartData">
+            <app-bar-chart [colors]="barChartColor" [barChartLabels]="barChartLabels" [barChartType]="barChartType" [barChartLegend]="barChartLegend" [barChartData]="barChartData"></app-bar-chart>
         </div>
         <div class="col-sm-6">
             <app-pie-chart [colors]="pchartColors" [pieChartData]="pieChartData" [pieChartLabels]="pieChartLabels" (onClickChart)="onClickChart($event)"></app-pie-chart>

@@ -4,15 +4,19 @@ $second-color: rgb(169, 112, 223);
 //#63003A;
 //#BC77A2;
 .mr-top-custom-22 {
-    margin-top: 22em
+    margin-top: 22em;
 }
 
 .mr-top-custom-10 {
-    margin-top: 10em
+    margin-top: 10em;
+}
+
+.mr-top-custom-3 {
+    margin-top: 3em;
 }
 
 .mr-top-custom {
-    margin-top: 15em
+    margin-top: 15em !important;
 }
 
 .bg-custom {
@@ -37,5 +41,5 @@ body a,
 p,
 label,
 div {
-    color: white;
+    // color: white;
 }

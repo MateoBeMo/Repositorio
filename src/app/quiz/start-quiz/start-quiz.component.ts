@@ -78,6 +78,7 @@ export class StartQuizComponent implements OnInit {
       const answers = [];
       this.quiz.questions.forEach(x => answers.push({'idPregunta': x.id,'namePregunta': x.name, 'idRespuesta': x.options.find( o => o.selected).id, 'nameRespuesta': x.options.find( o => o.selected).name }));
       answers.forEach( a => {
+        a.visto = false;
         if( a.idRespuesta === 1055 || a.idRespuesta === 1056 || a.idRespuesta === 1057 ){
           a.valoracion = 'Negativa';
         }
@@ -86,6 +87,7 @@ export class StartQuizComponent implements OnInit {
         }
       })
       const date = new Date().toLocaleString();
+      //console.log(date.getMonth());
       console.log(answers);
       this.respuestaService.upload2( date, answers);
       this.mode = 'result';

@@ -8,9 +8,12 @@
             <p class="card-text">Vendedor: {{resultado.vendedor}}</p>
             <p class="card-text">Optometrista: {{resultado.optometrista}}</p>
             <p class="card-text">Persona que entrega la gafa: {{resultado.entregaGafa}}</p>
-            <h5 class="card-title">Respuestas negativas: </h5>
-            <p *ngFor="let respuesta of respuestas" class="card-text"> {{respuesta.namePregunta}} : {{respuesta.nameRespuesta}}</p>
-            <a class="btn btn-primary" (onClick)="visto()">Visto</a>
+            <span *ngIf="respuestas?.length > 0">
+                <h5 class="card-title">Respuestas negativas: </h5>
+                <p *ngFor="let respuesta of respuestas" class="card-text"> {{respuesta.namePregunta}} : {{respuesta.nameRespuesta}}</p>
+                <a class="btn btn-primary" (click)="visto()">Visto</a>
+            </span>
+
         </div>
         <div class="card-footer text-muted">
             {{ resultado.fecha }}

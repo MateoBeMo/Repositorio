@@ -2,28 +2,28 @@
     <div class="row justify-content-center" *ngIf="employees">
         <div class="col-md-6 col-lg-4 form-group ">
             <label class="fs-20" for="vendedor"> Vendedor: </label>
-            <select class="form-control select-lg" id="vendedor" [(ngModel)]="vendedor">
+            <select class="form-control select-lg" id="vendedor" name="vendedor" [(ngModel)]="vendedor">
         <option *ngFor="let empleado of employees"> {{ empleado.name }} </option>
       </select>
         </div>
         <div class="col-md-6 col-lg-4 form-group ">
             <label class="fs-20" for="optometrista"> Optometrista: </label>
-            <select class="form-control select-lg" id="optometrista" [(ngModel)]="optometrista">
+            <select class="form-control select-lg" id="optometrista" name="optometrista" [(ngModel)]="optometrista">
         <option *ngFor="let empleado of employees"> {{ empleado.name }} </option>
       </select>
         </div>
         <div class=" col-md-6 col-lg-4 form-group ">
             <label class="fs-20" for="personaEntrega "> Persona que entrega la gafa: </label>
-            <select class="form-control select-lg " id="personaEntrega" [(ngModel)]="entregaGafa">
+            <select class="form-control select-lg " id="personaEntrega" name="entregaGafa" [(ngModel)]="entregaGafa">
             <option *ngFor="let empleado of employees"> {{ empleado.name }} </option>
             </select>
         </div>
         <div class="col-md-6 form-group">
             <label class="fs-20" for="numVenta">Número de venta: </label>
-            <input class="form-control select-lg" type="text" [(ngModel)]="numeroVenta">
+            <input class="form-control select-lg" type="text" name="numeroVenta" [(ngModel)]="numeroVenta">
         </div>
     </div>
 </div>
 <div class="text-sm-center mr-top-custom-10">
-    <a class="btn btn-primary btn-lg" (click)="siguiente()">Siguiente</a>
+    <button class="btn btn-primary btn-lg" [disabled]="!vendedor || !optometrista || !entregaGafa || !numeroVenta" (click)="siguiente()">Siguiente</button>
 </div>

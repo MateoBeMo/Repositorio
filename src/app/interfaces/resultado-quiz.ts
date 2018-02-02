@@ -3,7 +3,8 @@ import { Respuesta } from "./respuesta";
 
 
 export interface ResultadoQuiz {
-    fecha: number;
+    id: number;
+    fecha: Date;
     vendedor: string;
     optometrista: string;
     entregaGafa: string;

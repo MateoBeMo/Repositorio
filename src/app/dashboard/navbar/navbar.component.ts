@@ -10,19 +10,31 @@ import { ResultadoQuiz } from '../../interfaces/resultado-quiz';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  notificaciones: ResultadoQuiz [] = [];
+  notificaciones: ResultadoQuiz [] = null;
   public isCollapsed = false;
-  constructor(private userService: UserService, private respuestaService: RespuestaService) { }
+  
+
+  constructor(private userService: UserService, private respuestaService: RespuestaService) {
+     respuestaService.updateUserStatus.subscribe( res => {
+       this.getNotificaciones();
+   });
+   }
 
   ngOnInit() {
-    this.getNotificaciones();
-  }
+    this.respuestaService.getNotificaciones().subscribe(data => {
+      //this.notificaciones = data.filter(res => res.respuestas.every( r => r.visto != true));
+      this.notificaciones = data.filter(res => res.respuestas.find( r => r.valoracion !== 'Positiva' && r.visto !== true));
+        // console.log(this.notificaciones);
+    });
+}
   logOut(): void {
     this.userService.logout();
   }
-  getNotificaciones(): void {
-    this.respuestaService.getResultadosNegativos().subscribe(data => {
-      this.notificaciones = data;
+  public getNotificaciones(): void {
+    this.respuestaService.getNotificaciones().subscribe(data => {
+    //this.notificaciones = data.filter(res => res.respuestas.every( r => r.visto != true));
+    this.notificaciones = data.filter(res => res.respuestas.find( r => r.valoracion !== 'Positiva' && r.visto !== true));
+      // console.log(this.notificaciones);
     });
   }
 }

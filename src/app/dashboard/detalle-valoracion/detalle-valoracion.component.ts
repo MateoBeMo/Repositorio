@@ -5,6 +5,7 @@ import { Params, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import 'rxjs/add/operator/switchMap';
 import { Respuesta } from '../../interfaces/respuesta';
+import { NavbarComponent } from '../../dashboard/navbar/navbar.component'
 
 @Component({
   selector: 'app-detalle-valoracion',
@@ -22,7 +23,7 @@ export class DetalleValoracionComponent implements OnInit {
     this.route.params.switchMap((params: Params) => this.respuestaService.getResultado(+params['id'])).subscribe(data => { this.resultado = data; this.resultado = data; 
       this.respuestas = data.respuestas.filter( r => r.valoracion === 'Negativa') });
   }
-  visto() {
-    // this.respuestaService.visto( this.resultado.id );
+  visto(): void {
+    this.respuestaService.visto( this.resultado );
   }
 }

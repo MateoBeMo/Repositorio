@@ -2,6 +2,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Customer } from '../../../shared/interfaces/customer';
 import { CustomerService } from '../../../shared/services/customer.service';
 import { RespuestaService } from '../../../shared/services/respuesta.service';
+
 // import { ViewEncapsulation } from '@angular/compiler/src/core';
 
 
@@ -14,15 +15,13 @@ import { RespuestaService } from '../../../shared/services/respuesta.service';
 })
 export class SecondViewComponent implements OnInit {
 
-  // rows = [
-  //   { numeroVenta: 'Austin', vendedor: 'Male', fecha: 'Swimlane', options: 'Aparcao'},
-  //   { numeroVenta: 'Dany', vendedor: 'Male', fecha: 'KFC' },
-  //   { numeroVenta: 'Molly', vendedor: 'Female', fecha: 'Burger King' },
-  // ];
   rows = [];
   temp = [];
   loadingIndicator: boolean = true;
   reorderable: boolean = true;
+  search: string;
+
+  
 
   columns = [
     { name: 'Numero Venta' },
@@ -44,7 +43,24 @@ export class SecondViewComponent implements OnInit {
   }
 
   getData(): void {
-    this.respuestaService.getResultados().subscribe(data => this.rows = data);
+    this.respuestaService.getResultados().subscribe(data => {
+      this.temp = [...data];
+      this.rows = data;// cache our list
+    });
   }
+
+  updateFilter(event: string) {
+    const val = event.toLowerCase();
+
+    // filter our data
+    const temp = this.temp.filter(d =>{
+      return String(d.numeroVenta).toLowerCase().indexOf(val) !== -1 || !val;
+    });
+    // update the rows
+    this.rows = temp;
+    // Whenever the filter changes, always go back to the first page
+    // this.table.offset = 0;
+  }
+
 
 }

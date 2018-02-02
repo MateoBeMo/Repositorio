@@ -21,13 +21,13 @@
                 {
                     "id": 1057,
                     "questionId": 1010,
-                    "name": "Buena",
+                    "name": "Normal",
                     "selected": false
                 },
                 {
                     "id": 1058,
                     "questionId": 1010,
-                    "name": "Muy Buena",
+                    "name": "Buena",
                     "selected": false
                 },
                 {
@@ -62,13 +62,13 @@
                 {
                     "id": 1057,
                     "questionId": 1010,
-                    "name": "Buena",
+                    "name": "Normal",
                     "selected": false
                 },
                 {
                     "id": 1058,
                     "questionId": 1010,
-                    "name": "Muy Buena",
+                    "name": "Buena",
                     "selected": false
                 },
                 {
@@ -149,13 +149,13 @@
                 {
                     "id": 1057,
                     "questionId": 1010,
-                    "name": "Buena",
+                    "name": "Normal",
                     "selected": false
                 },
                 {
                     "id": 1058,
                     "questionId": 1010,
-                    "name": "Muy Buena",
+                    "name": "Buena",
                     "selected": false
                 },
                 {

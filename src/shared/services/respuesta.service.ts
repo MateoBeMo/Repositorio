@@ -5,29 +5,38 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import { ResultadoQuiz } from '../../app/interfaces/resultado-quiz';
 import { Respuesta } from '../../app/interfaces/respuesta';
+import { Router } from '@angular/router';
+import { Subject } from 'rxjs/Subject';
+
+
 
 @Injectable()
 export class RespuestaService {
 
+  public updateUserStatus: Subject<boolean> = new Subject();
+
 resultado: ResultadoQuiz = {
-    fecha: 11-11-1111,
+    id: undefined,
+    fecha: new Date(11-11-1111),
     vendedor: "string",
     optometrista: "string",
     entregaGafa: "string",
     numeroVenta: "string",
     respuestas: [   
     { 
+        id: undefined,
         idPregunta: 0,
         namePregunta: "string",
         idRespuesta: 0,
         nameRespuesta: "string",
-        valoracion: "string"
+        valoracion: "string",
+        visto: undefined
     }
     ],
 };
    
 
-  constructor(private httpClient: HttpClient, private http: Http ) { }
+  constructor(private httpClient: HttpClient, private http: Http,  private router: Router ) { }
 
   upload1(a,b,c,d){
     this.resultado.vendedor = a;
@@ -40,12 +49,8 @@ resultado: ResultadoQuiz = {
       this.resultado.respuestas = f;
       console.log(this.resultado);
       this.httpClient.post('http://localhost:3000/resultados',this.resultado).subscribe();
-      this.resultado.respuestas.forEach( r => this.httpClient.post('http://localhost:3000/respuestas',r).subscribe() );
   }
 
-  getRespuestas(): Observable<Respuesta[]> {
-    return this.httpClient.get<Respuesta[]>('http://localhost:3000/respuestas');
-  }
 
   getResultados(): Observable<ResultadoQuiz[]> {
     return this.httpClient.get<ResultadoQuiz[]>('http://localhost:3000/resultados');
@@ -60,5 +65,16 @@ resultado: ResultadoQuiz = {
   getResultado(id): Observable<ResultadoQuiz> {
     return this.httpClient.get<ResultadoQuiz>('http://localhost:3000/resultados/'+id);
   }
+  visto (res: ResultadoQuiz ): void {
+    this.updateUserStatus.next();
+    res.respuestas.map( res => res.visto = true);
+    this.httpClient.put('http://localhost:3000/resultados/'+res.id, res).subscribe();
+    // window.location.reload();
+    this.router.navigate(['dashboard']);
+  }
+  getNotificaciones(): Observable<ResultadoQuiz[]> {
+    return this.httpClient.get<ResultadoQuiz[]>('http://localhost:3000/resultados?q!=true');
+  }
+    
 
 }

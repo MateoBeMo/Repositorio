@@ -16,10 +16,21 @@ export class FirstViewComponent implements OnInit {
 
   pchartColors: any[] = [
     {
-      backgroundColor: ["indigo", "	#ff1a1a"]
-    }]
+      backgroundColor: ["indigo", "	red"],
+    }];
 
-  respuestas: Respuesta[] = [];
+    barChartColor: any[] = [
+          { // indigo
+          backgroundColor: 'indigo'
+          },
+          { // red
+          backgroundColor: 'red'
+          },
+          { // green
+          backgroundColor: 'green'
+          }];
+
+  resultados: ResultadoQuiz[] = [];
   pieChartLabels: string[] = ['Resutlados positivos', 'Resultados negativos'];
   pieChartData: number[];
   malas: number = 0;
@@ -28,13 +39,10 @@ export class FirstViewComponent implements OnInit {
   resultadosPositivos: ResultadoQuiz[] = [];
 
 
-  barChartLabels: string[] = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
+  barChartLabels: string[] = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
   barChartType: string = 'bar';
   barChartLegend: boolean = true;
-  barChartData: any[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
-    { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' }
-  ];
+  barChartData: any[];
 
   constructor(private respuestaService: RespuestaService, private modalService: NgbModal) { }
 
@@ -43,23 +51,132 @@ export class FirstViewComponent implements OnInit {
     this.getResultadosNegativos();
     this.getResultadosPositivos();
   }
-
   getData(): void {
     let variable: number[] = [];
-    this.respuestaService.getRespuestas().subscribe(data => {
-      this.respuestas = data;
-      this.respuestas.forEach(r => {
-        if (r.idRespuesta === 1055 || r.idRespuesta === 1056 || r.idRespuesta === 1057) {
-          this.malas++;
-        }
-        else {
-          this.buenas++;
-        }
-      });
+    this.respuestaService.getResultados().subscribe(data => {
+      this.resultados = data;
+      this.resultados.forEach(r => { r.respuestas.forEach( res => { 
+        if (res.idRespuesta === 1055 || res.idRespuesta === 1056 || res.idRespuesta === 1057) {
+        this.malas++;
+      }
+      else {
+        this.buenas++;
+      } 
+    })});
       variable.push(this.buenas, this.malas);
-      // variable.push(this.malas);
       this.pieChartData = variable;
+      this.getBarData();
     });
+
+  }
+  getBarData(): void {
+    let dataBuenas: number[] = [0,0,0,0,0,0,0,0,0,0,0,0];
+    let dataMalas: number[] = [0,0,0,0,0,0,0,0,0,0,0,0];
+    this.resultados.forEach( r => {
+      let mes = r.fecha.toString().split('/');
+      switch(mes[1]){
+        case '1':
+          r.respuestas.forEach( res =>{ 
+            if( res.valoracion === 'Positiva') 
+              dataBuenas[0]++;
+            else
+            dataMalas[0]++;
+          });
+          break;
+        case '2':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[1]++;
+          else
+          dataMalas[1]++;
+        });
+         break; 
+        case '3':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[2]++;
+          else
+          dataMalas[2]++;
+        });
+       break;
+        case '4':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[3]++;
+          else
+          dataMalas[3]++;
+        });
+       break;
+        case '5':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[4]++;
+          else
+          dataMalas[4]++;
+        });
+       break;
+        case '6':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[5]++;
+          else
+          dataMalas[5]++;
+        });
+       break;
+        case '7':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[6]++;
+          else
+          dataMalas[6]++;
+        });
+       break;
+        case '8':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[7]++;
+          else
+          dataMalas[7]++;
+        });
+       break;
+        case '9':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[8]++;
+          else
+          dataMalas[8]++;
+        });
+       break;
+        case '10':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[9]++;
+          else
+          dataMalas[9]++;
+        });
+       break;
+        case '11':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[10]++;
+          else
+          dataMalas[10]++;
+        });
+       break;
+        case '12':
+        r.respuestas.forEach( res =>{ 
+          if( res.valoracion === 'Positiva') 
+            dataBuenas[11]++;
+          else
+          dataMalas[11]++;
+        });
+       break;
+      }
+    });
+    this.barChartData =[ 
+      {data: dataBuenas, label: 'Resultados Positivos'},
+      {data: dataMalas, label: 'Resultados Negativos'}
+    ]
   }
   getResultadosNegativos(): void {
     this.respuestaService.getResultadosNegativos().subscribe(data => {
@@ -90,7 +207,7 @@ export class FirstViewComponent implements OnInit {
     if( tipo === 'Negativos')
       modalRef.componentInstance.resultadosNegativos = this.resultadosNegativos;
     else
-    modalRef.componentInstance.resultadosPositivos = this.resultadosPositivos;
+      modalRef.componentInstance.resultadosPositivos = this.resultadosPositivos;
 
   }
 }
@@ -105,11 +222,12 @@ export class FirstViewComponent implements OnInit {
     </div>
     <ul *ngIf="tipo === 'Negativos'" class="modal-body" style="margin-left: 2.5em;">
       <li *ngFor="let resultado of resultadosNegativos">
-       <a [routerLink]="['dashboard/detalle-valoracion', resultado.id]" > ID: {{resultado.id }} , Número de venta: {{resultado.numeroVenta}} </a>
+       <a [routerLink]="['dashboard/detalle-valoracion', resultado.id]" (click)="activeModal.close('Close click')" > Número de venta: {{resultado.numeroVenta}} </a>
       </li>
       </ul>
     <ul *ngIf="tipo === 'Totalmente Positivos'" class="modal-body">
-      <li *ngFor="let resultado of resultadosPositivos" > <a [routerLink]="['dashboard/detalle-valoracion', resultado.id]" > Número de venta: {{resultado.numeroVenta}} </a>
+      <li *ngFor="let resultado of resultadosPositivos" >
+       <a [routerLink]="['dashboard/detalle-valoracion', resultado.id]" (click)="activeModal.close('Close click')" > Número de venta: {{resultado.numeroVenta}} </a>
       </li>
     </ul>
     <div class="modal-footer">
@@ -119,6 +237,7 @@ export class FirstViewComponent implements OnInit {
 })
 export class NgbdModalContent {
   @Input() name;
+  @Input() tipo;
 
   constructor(public activeModal: NgbActiveModal) { }
 }
