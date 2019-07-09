@@ -399,6 +399,706 @@
         }
       ],
       "id": 8
+    },
+    {
+      "fecha": "21/3/2018 21:42:50",
+      "vendedor": "Noelia",
+      "optometrista": "Rocio",
+      "entregaGafa": "Mª José",
+      "numeroVenta": "123",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1058,
+          "nameRespuesta": "Buena",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1058,
+          "nameRespuesta": "Buena",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1058,
+          "nameRespuesta": "Buena",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "fecha": "21/3/2018 21:43:09",
+      "vendedor": "Lorena",
+      "optometrista": "Mª José",
+      "entregaGafa": "Empleado 1",
+      "numeroVenta": "12321",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1055,
+          "nameRespuesta": "Muy pobre",
+          "visto": true,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1055,
+          "nameRespuesta": "Muy pobre",
+          "visto": true,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1055,
+          "nameRespuesta": "NO",
+          "visto": true,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1055,
+          "nameRespuesta": "NO",
+          "visto": true,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1055,
+          "nameRespuesta": "Muy pobre",
+          "visto": true,
+          "valoracion": "Negativa"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "fecha": "22/3/2018 0:38:40",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1058,
+          "nameRespuesta": "Buena",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1058,
+          "nameRespuesta": "Buena",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "fecha": "22/3/2018 0:39:16",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "fecha": "22/3/2018 0:40:13",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "fecha": "22/3/2018 0:40:48",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": true,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": true,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1055,
+          "nameRespuesta": "NO",
+          "visto": true,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1055,
+          "nameRespuesta": "NO",
+          "visto": true,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": true,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "fecha": "22/3/2018 0:42:18",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 15
+    },
+    {
+      "fecha": "22/3/2018 0:42:57",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "fecha": "22/3/2018 0:43:19",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 17
+    },
+    {
+      "fecha": "22/3/2018 0:44:10",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 18
+    },
+    {
+      "fecha": "22/3/2018 0:46:20",
+      "vendedor": "string",
+      "optometrista": "string",
+      "entregaGafa": "string",
+      "numeroVenta": "string",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1058,
+          "nameRespuesta": "Buena",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 19
+    },
+    {
+      "fecha": "22/3/2018 0:47:55",
+      "vendedor": "Luis",
+      "optometrista": "Empleado 1",
+      "entregaGafa": "Noelia",
+      "numeroVenta": "q",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1055,
+          "nameRespuesta": "NO",
+          "visto": false,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 20
+    },
+    {
+      "fecha": "22/3/2018 0:56:40",
+      "vendedor": "Mª José",
+      "optometrista": "Beatriz",
+      "entregaGafa": "Empleado 1",
+      "numeroVenta": "qdas",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1058,
+          "nameRespuesta": "Buena",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 21
+    },
+    {
+      "fecha": "1/4/2018 20:41:55",
+      "vendedor": "Noelia",
+      "optometrista": "Beatriz",
+      "entregaGafa": "Noelia",
+      "numeroVenta": "jhjhgh",
+      "respuestas": [
+        {
+          "idPregunta": 1010,
+          "namePregunta": "La persona que le atendió, ¿se mostró amable y se interesó por sus necesidades?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1011,
+          "namePregunta": "¿La graduación que te hicimos te pareció completa y profesional?",
+          "idRespuesta": 1057,
+          "nameRespuesta": "Normal",
+          "visto": false,
+          "valoracion": "Negativa"
+        },
+        {
+          "idPregunta": 1012,
+          "namePregunta": "¿Te dieron varias opciones de presupuesto?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1013,
+          "namePregunta": "En la entrega de tu gafa, ¿te hemos ofrecido ajustarla y te hemos explicado las garantias y seguros?",
+          "idRespuesta": 1059,
+          "nameRespuesta": "SÍ",
+          "visto": false,
+          "valoracion": "Positiva"
+        },
+        {
+          "idPregunta": 1014,
+          "namePregunta": "Valora de manera general tu experiencia en ALAIN AFFLELOU “Nueva Condomina”",
+          "idRespuesta": 1059,
+          "nameRespuesta": "Excelente",
+          "visto": false,
+          "valoracion": "Positiva"
+        }
+      ],
+      "id": 22
     }
   ]
 }

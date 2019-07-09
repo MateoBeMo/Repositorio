@@ -1,6 +1,6 @@
 @import '../../app.component.scss';
-$colorEstrella: #16a085;
-$colorHover: #1abc9c;
+$colorEstrella: #C0A471;
+$colorHover: rgb(212, 155, 47);
 .star-rating {
     font-family: 'FontAwesome';
     margin: 50px auto;
@@ -57,6 +57,8 @@ $colorHover: #1abc9c;
 .badge {
     margin-bottom: 2em;
     font-size: 1.5em;
+    background-color: black;
+    color: white;
 }
 
 .yesno {
@@ -64,8 +66,9 @@ $colorHover: #1abc9c;
     display: block;
     margin: 40px;
     padding: 20px 50px;
-    background-color: #16a085;
+    background-color: $colorEstrella;
     border-radius: 7px;
+    color: white;
     &:hover {
         background-color: $colorHover;
         cursor: pointer;
@@ -74,6 +77,11 @@ $colorHover: #1abc9c;
 
 .yesno input {
     display: none;
+}
+
+.question,
+.result {
+    font-size: 2.3em;
 }
 
 body {
@@ -95,5 +103,5 @@ body a,
 p,
 label,
 div {
-    color: white;
+    color: black;
 }

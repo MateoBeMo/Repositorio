@@ -1,6 +1,8 @@
 // _app-component.scss
-$primary-color: indigo;
-$second-color: rgb(169, 112, 223);
+$primary-color: white;
+$second-color: #C3A269;
+$second-color-hover: rgb(133, 96, 28);
+$background-color: rgb(228, 230, 231);
 //#63003A;
 //#BC77A2;
 .mr-top-custom-22 {
@@ -37,9 +39,18 @@ $second-color: rgb(169, 112, 223);
     white-space: nowrap;
 }
 
-body a,
-p,
-label,
-div {
-    // color: white;
+.btn-primary,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: $second-color !important;
+    color: white;
+    border: black;
+}
+
+.btn-primary:active {
+    background-color: $second-color-hover !important;
+}
+
+.big-font {
+    font-size: 1.5em;
 }

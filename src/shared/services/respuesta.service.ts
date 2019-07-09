@@ -17,7 +17,7 @@ export class RespuestaService {
 
 resultado: ResultadoQuiz = {
     id: undefined,
-    fecha: new Date(11-11-1111),
+    fecha: undefined,
     vendedor: "string",
     optometrista: "string",
     entregaGafa: "string",
@@ -34,6 +34,8 @@ resultado: ResultadoQuiz = {
     }
     ],
 };
+
+public seleccionado: Boolean = false;
    
 
   constructor(private httpClient: HttpClient, private http: Http,  private router: Router ) { }
@@ -43,12 +45,14 @@ resultado: ResultadoQuiz = {
     this.resultado.optometrista = b;
     this.resultado.entregaGafa = c;
     this.resultado.numeroVenta = d;
+    this.seleccionado = true;
   }
   upload2(e,f){
       this.resultado.fecha = e;
       this.resultado.respuestas = f;
-      console.log(this.resultado);
+      // console.log(this.resultado);
       this.httpClient.post('http://localhost:3000/resultados',this.resultado).subscribe();
+      this.seleccionado = false;
   }
 
 

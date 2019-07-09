@@ -16,7 +16,7 @@
         <div *ngFor="let question of filteredQuestions;">
             <div class="badge badge-info">Pregunta {{pager.index + 1}} de {{pager.count}}.</div>
             <h2>{{pager.index + 1}}.
-                <span [innerHTML]="question.name"></span>
+                <span class="question" [innerHTML]="question.name"></span>
             </h2>
             <div class="row justify-content-center">
                 <div *ngIf="question.questionTypeId == 1;then block else elseBlock"></div>
@@ -40,10 +40,10 @@
 
                         </div>
                     </div>
-
                 </ng-template>
             </div>
         </div>
+        <button class="btn btn-primary btn-lg" (click)="salir()">Salir</button>
         <!-- <hr /> -->
         <!-- <div class="text-sm-center">
       <button class="btn btn-default" *ngIf="config.allowBack" (click)="goTo(0);">First</button>
@@ -59,7 +59,7 @@
       <div (click)="goTo(index)" class="{{ isAnswered(question) == 'Answered'? 'answered': 'not-answered' }}">{{index + 1}}. {{ isAnswered(question) }}</div>
     </div>
   </div> -->
-    <div class="result mr-top-custom text-sm-center" *ngIf="mode=='result'">
+    <div class="result text-sm-center" *ngIf="mode=='result'">
         <!-- <h2>Quiz Result</h2>
     <div *ngFor="let question of quiz.questions; let index = index">
       <div class="result-question">
@@ -72,8 +72,9 @@
         <div class="alert {{ isCorrect(question) == 'correct'? 'alert-success': 'alert-danger'}}">Your answer is {{isCorrect(question)}}.</div>
       </div>
     </div> -->
-        <h3>Tu opinion es importante para nosotros y la tenemos en cuenta para mejorar dia a dia.</h3>
-        <h2 class="alert alert-info ">¡GRACIAS POR CONFIAR EN NOSOTROS!</h2>
+        <p><b>Tu opinion es importante para nosotros y la tenemos en cuenta para mejorar dia a dia.</b></p>
+        <p><b class="alert">¡GRACIAS POR CONFIAR EN NOSOTROS!</b></p>
+        <img class="navbar-brand" src="assets/logo-afflelou.svg" alt="Logo">
         <button class="btn btn-primary btn-lg" (click)="salir()">Salir</button>
     </div>
 

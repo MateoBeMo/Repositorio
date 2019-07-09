@@ -43,9 +43,14 @@ export class StartQuizComponent implements OnInit {
   constructor(private quizService: QuizService, private router: Router, private respuestaService: RespuestaService) { }
 
   ngOnInit() {
-    this.quizes = this.quizService.getAll();
-    this.quizName = this.quizes[0].id;
-    this.loadQuiz(this.quizName);
+    if (!this.respuestaService.seleccionado) {
+      this.router.navigate(['quiz/approval-quiz'])
+    }
+    else { 
+      this.quizes = this.quizService.getAll();
+      this.quizName = this.quizes[0].id;
+      this.loadQuiz(this.quizName);
+    }
   }
 
   loadQuiz(quizName: string) {

@@ -33,7 +33,7 @@ export class Login implements OnInit {
   public onSubmit(values: any): void {
 
     if (this.form.valid) {
-      console.log('FORM VALID');
+      // console.log('FORM VALID');
       this.auth.login({
         username: values.email,
         password: values.password,

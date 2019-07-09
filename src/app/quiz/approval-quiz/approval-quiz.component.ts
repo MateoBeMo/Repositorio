@@ -33,4 +33,7 @@ export class ApprovalQuizComponent implements OnInit {
   getEmployees(): void {
     this.employees = this.employeeSerivice.getEmployee();
   }
+  goHome(): void {
+    this.router.navigate(['quiz/']);
+  }
 }

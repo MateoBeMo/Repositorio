@@ -16,15 +16,15 @@ export class FirstViewComponent implements OnInit {
 
   pchartColors: any[] = [
     {
-      backgroundColor: ["indigo", "	red"],
+      backgroundColor: ["#C3A269", "#A7AAAC"],
     }];
 
     barChartColor: any[] = [
           { // indigo
-          backgroundColor: 'indigo'
+          backgroundColor: '#C3A269'
           },
           { // red
-          backgroundColor: 'red'
+          backgroundColor: '#A7AAAC'
           },
           { // green
           backgroundColor: 'green'
